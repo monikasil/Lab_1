@@ -6,29 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="OnButtonclick"
         android:text="Button"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="430dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_1"
+        tools:layout_editor_absoluteX="116dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_press_me"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="307dp" />
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="313dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

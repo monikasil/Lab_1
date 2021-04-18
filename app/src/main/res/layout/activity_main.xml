@@ -7,23 +7,34 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_01"
+        android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="40dp"
         android:onClick="OnButtonclick"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/textView_1"
-        tools:layout_editor_absoluteX="116dp"
+        android:text="@string/button_do_smth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="540dp"
         android:text="@string/button_press_me"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="313dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

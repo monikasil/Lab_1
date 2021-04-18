@@ -22,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
         this.TextView_1.setText("You've change the text!");
     }
 
+    public void OnButtonclick_2(View view) {
+        this.TextView_1.setTextColor(0xFF00FF00);
+    }
 
 }
